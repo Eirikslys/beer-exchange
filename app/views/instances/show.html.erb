@@ -31,6 +31,9 @@
   <% if @instance.user == current_user %>
     <div class="send-mail">
       <p class="p-normal">
+        Share this link with anyone you would like to invite to this exchange: https://www.secret-santas.com/instances/<%= @instance.name %>
+      </p>
+      <p class="p-normal">
         As of this moment
         <%= @instance.beers.count %>
         users have registered their information to participate in this exchange.
