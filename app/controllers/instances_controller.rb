@@ -15,7 +15,7 @@ class InstancesController < ApplicationController
   # end
 
   def show
-    @instance = Instance.find(params[:id])
+    @instance = Instance.find_by_name(params[:id])
     @beer = Beer.where("instance_id = #{@instance.id} AND user_id = #{current_user.id}").first
   end
 

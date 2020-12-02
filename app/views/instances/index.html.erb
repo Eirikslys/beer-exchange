@@ -10,7 +10,7 @@ thinking drop-down menu. Possibly also a search bar. -->
     <select name="instances" class="form-control form-control-lg" onchange="location = this.value;">
       <option value="#">Select your beer exchange group</option>
     <% @instances.each do |instance|%>
-        <option value="<%= instance_path(instance)%>"><%= instance.name %></option>
+        <option value="<%= instance_path(instance.name)%>"><%= instance.name %></option>
     <% end %>
     </select>
   </div>
