@@ -16,7 +16,7 @@
         <p class="p-normal"> email: <%= @beer.email %> </p>
       </div>
       <p class="p-normal">
-        Would you like to make changes? <%= link_to "Click here", instance_beer_path(@instance, @beer), class: "" %>
+        Would you like to make changes? <%= link_to "Click here", instance_beer_path(@instance.name, @beer), class: "" %>
         to edit your information.
       </p>
     </div>
