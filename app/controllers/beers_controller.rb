@@ -16,7 +16,7 @@ class BeersController < ApplicationController
   def update
     @beer = Beer.where("instance_id = #{@instance.id} AND user_id = #{current_user.id}").first
     @beer.update!(beer_params)
-    redirect_to @beer
+    redirect_to @instance
   end
 
   def new
@@ -39,7 +39,7 @@ class BeersController < ApplicationController
 
   private
   def find_instance
-    @instance = Instance.find(params[:instance_id])
+    @instance = Instance.find_by_name(params[:instance_id])
   end
 
   def beer_params
