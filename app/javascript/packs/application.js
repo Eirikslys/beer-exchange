@@ -37,4 +37,14 @@ document.addEventListener('turbolinks:load', () => {
   // add find by id, add eventlistener('click') => {
   // extract the inner html, and use location.href = url; to send the user to the instance page
   // }
+  const find = document.getElementById("find-instance");
+  if (find) {
+    find.addEventListener("click", (event) => {
+      const textInput = document.getElementById("instance")
+      console.log("click registered")
+      console.log(textInput.value)
+      console.log(window.location.href)
+      window.location.href = `http://localhost:3000/instances/${textInput.value}`
+    });
+  }
 });
