@@ -33,7 +33,7 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  // TODO, 1. add a field on instance view.
+  // TODO, 1. add a field on instance view. https://stackoverflow.com/questions/21965568/rails-link-to-text-field-value
   // add find by id, add eventlistener('click') => {
   // extract the inner html, and use location.href = url; to send the user to the instance page
   // }
