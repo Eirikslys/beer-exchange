@@ -7,3 +7,4 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 Instance.destroy_all
+puts "instances destroyed"
