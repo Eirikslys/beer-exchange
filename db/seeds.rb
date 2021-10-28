@@ -6,5 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Beer.destroy_all
+puts "beers destroyed"
+
 Instance.destroy_all
 puts "instances destroyed"
